@@ -1,0 +1,252 @@
+/* Key Frames*/
+@keyframes logoMoveRight {
+    /*form{background-color: red;}
+    to{background-color: yellow;}*/
+
+    form{transform: translate(-70vw,0px);}
+    to{transform: translate(70vw,0px);}
+
+    /*from{float: left;}
+    to{float: right;}*/
+}
+
+@keyframes fadeOut {
+    from{opacity: 100;}
+    to{opacity: 0;}
+}
+
+
+
+/*< TOP NAV>*/
+.topNav{
+    display: inline;
+    list-style-type: none;
+    overflow: hidden;
+
+    padding: 0;
+    padding-top: 2vh; /*inside border*/
+    padding-bottom: 4vh;
+    margin: 0; /*outside border*/
+    /*border: 0;*/
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+
+    /*background-color: blueviolet;*/
+
+    /*text-decoration: none;*/
+    /*text-align: center;*/
+}
+
+div.topNav img.left{
+    width: 25vw;
+
+    float: left;
+
+    padding-top: 2vh;
+    padding-left: 2vw;
+    margin: 0;   
+}
+
+div.topNav img.right{
+
+    width: 25vw;
+
+    float: right;
+
+    padding: 0;
+    padding-right: 2vw;
+    margin: 0; 
+
+    box-shadow: 0 0 2vh 1.4vh black; /*makes a shadow for text look nice
+
+    animation-duration: 1.5s;*/
+}
+
+/*<about and legal dislcamer>*/
+div.topNav a.optsOn { /*regular*/
+    display: block;
+    float: left;
+    
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: 0;
+    margin-top: 1vh;
+
+    font-family: 'Rubik', sans-serif;
+    color: aliceblue;
+    font-size: 2vh;
+
+    text-decoration: none;
+    /*background-color: #000000;*/
+}
+
+div.topNav a.optsOff { /*fade out animation*/
+    display: block;
+    float: left;
+    
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: 0;
+    margin-top: 1vh;
+
+    font-family: 'Rubik', sans-serif;
+    color: aliceblue;
+    font-size: 2vh;
+    opacity: 0;
+
+    text-decoration: none;
+
+    /*animation-name: fadeOut;
+    animation-duration: 1s;*/
+    display: none;
+    /*background-color: #000000;*/
+}
+
+/*header nav a.active {
+    background: #00c2cb;
+    color: #42455a;
+    transition: 0.5s ease-out;
+    letter-spacing: 2px;
+  }
+
+/*<BODY>*/
+
+body{
+    background-color: black;
+    font-family: 'Rubik', sans-serif;
+    color: aliceblue;
+
+    padding: 0;
+    padding-bottom: 10vh;
+    margin: 0;
+    margin-bottom: 10vh;
+}
+
+body button.start{
+    padding: 0;
+    margin: 0;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    border: none;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 9vh;
+    border-radius: 10px;
+    /*background-color: antiquewhite;*/
+}
+
+body button.finish{
+    padding: 0;
+    margin-top: 10vh;
+    /*margin-bottom: 10vh;*/
+
+    border: none;
+    text-align: center;
+    text-decoration: none;
+
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    font-size: 4vh;
+    border-radius: 10px;
+}
+
+body button.retest{
+    padding: 0;
+    margin-top: 10vh;
+    /*margin-bottom: 10vh;*/
+
+    border: none;
+    text-align: center;
+    text-decoration: none;
+
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    font-size: 6vh;
+    border-radius: 10px;
+}
+
+body h2.instructions{
+    padding-top: 10vh; 
+    padding-left: 2vw;
+    /*background-color: aqua;*/
+}
+
+body form{
+    padding-top: 2vh;
+    padding-left: 3vw;
+}
+
+body form div.question{
+    display: block;
+    
+    padding-top: 2vh;
+}
+
+body form div label.qnum{
+    padding-left: 3vw;
+}
+
+
+/* Score Conatiner and score display*/
+body div.scoreContainer{
+    display: inline;
+    list-style-type: none;
+    overflow: hidden;
+
+    padding: 0vh; /*inside border*/
+    margin: 0vh; /*outside border*/
+
+    position: fixed;
+    top: 18%;
+    width: 100%;
+    /*z-index: 99;*/
+}
+
+body div h2.score{
+    padding: 0;
+    margin: 0;
+
+    margin: auto;
+    text-align: center;
+    font-size: 50vh;
+}
+
+
+/*About and Legal pages*/
+
+body div.messageHolder{
+    padding: 0;
+    padding-top: 20vh;
+    padding-left: 10vw;
+    margin: 0;
+}
+
+body div p.message{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 3vw;
+    padding-right: 10vw;
+    margin: 0;
+    /*letter-spacing: 3px;*/
+    line-height: 3.5vh;
+}
