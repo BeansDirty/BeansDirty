@@ -109,7 +109,7 @@ function showResults(){
     const buttonF = document.createElement("button");
     buttonF.setAttribute("type", "button");
     buttonF.setAttribute("class", "retest");
-    //buttonF.setAttribute("href", "main.html");
+    //buttonF.setAttribute("href", "index.html");
     //buttonF.setAttribute("id", "");
     buttonF.setAttribute("onclick", "mainPage()");
     buttonF.innerHTML = "Retest";
