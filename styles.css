@@ -201,7 +201,7 @@ body button.retest{
 }
 
 /*Desktop style*/
-@media all and (min-width: 1000px) {
+@media all and (min-width: 0px) {
     body h2.instructions{
         padding-top: 10vh; 
         padding-left: 2vw;
@@ -235,25 +235,23 @@ body button.retest{
     }
 }
 
-/*Moble Style*/
+/*Moble Style*/ /*
 @media all and (max-width: 1000px) {
     /*
     p {font-size:120%}
     h1 {font-size:250%}
-    label {font-size: 250%;}*/
+    label {font-size: 250%;}*/ /*
 
     body h2.instructions{
         padding-top: 10vh; 
         padding-left: 2vw;
         font-size: 200%;
-        /*background-color: aqua;*/
     }
     
     body h3.instructions{
         padding-top: 2vh; 
         padding-left: 3vw;
         font-size: 200%;
-        /*background-color: aqua;*/
     }
     
     body form{
@@ -277,7 +275,7 @@ body button.retest{
         padding-top: 200px;
         background-color: blueviolet;
     }
-}
+}*/
 
 /* Score Conatiner and score display*/
 body div.scoreContainer{
