@@ -223,6 +223,7 @@ body button.retest{
         display: block;
         
         padding-top: 2vh;
+        line-height: 3vh;
     }
 
     body form div label.qnum{
